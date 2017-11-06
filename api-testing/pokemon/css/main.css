@@ -22,6 +22,6 @@ h1{
 	cursor: pointer;
 	background-color: red;
 }
-.grow{
-	font-size: 100px;
+.shrink{
+	font-size: 10px;
 }

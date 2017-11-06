@@ -1,18 +1,16 @@
 $( document ).ready(function() {
   console.log( 'ready!' );
   $.ajax({
-  	url: "http://pokeapi.co/api/v2/pokemon/1/",
+  	url: "https://swapi.co/api/people",
   	type: 'GET',
   	dataType: 'json',
   	success(response){
-  		console.log("We did it");
+      for(let i=0; i<10; i++){
+        console.log('success '+response.results[i].name)
+      }
   	}
-  	error(jqXHR, status, errorThrown){
-  		console.log("Error");
-  	}
-
   })
   $('#request').click(function(e){
-  	$('h1').toggleClass('grow');
+  	$('h1').toggleClass('shrink');
   })
 });
