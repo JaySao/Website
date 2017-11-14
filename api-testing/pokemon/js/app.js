@@ -5,9 +5,14 @@ $( document ).ready(function() {
   	type: 'GET',
   	dataType: 'json',
   	success(response){
-      for(let i=0; i<10; i++){
-        console.log('success '+response.results[i].name)
-      }
+      $('#request').click(function(e){
+                  for(let i=0; i<10; i++){
+            console.log('success'+response.results[i].name)
+            $('#starwars').append('<li>'+response.results[i].name+'</li>')
+          }
+      })
+
+
   	}
   })
   $('#request').click(function(e){
