@@ -1,0 +1,144 @@
+/* Global */
+body, html{
+  margin:0;
+  background-color: #F4F4F4;
+  height: 100%;
+  font-family: Montserrat, sans-serif;
+  line-height: 1.6;
+}
+.container{
+  width:80%;
+  margin:auto;
+  height: auto;
+  overflow: auto;
+}
+.hcontainer{
+  width:80%;
+  margin:auto;
+  height: auto;
+}
+section{
+  height: auto;
+}
+
+
+/* Header */
+header{
+  background: url("./resources/atl.png");
+  height: 100%;
+  background-size: cover;
+  text-align: center;
+  border-bottom: 3px orange solid;
+}
+.overlay {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: auto;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.5);
+}
+header h1{
+  margin-top: 0;
+  padding-top: 20%;
+  color: white;
+  padding-bottom: 20px;
+  font-size: 3.4rem;
+}
+header a{
+  color: white;
+  text-decoration: none;
+  border: 2px orange solid;
+  border-radius: 50px;
+  padding: 10px;
+  font-weight: 700;
+}
+
+/* Expertise */
+#expertise{
+  text-align: center;
+  background-color: #F4F4F4
+  height:auto;
+  width:100%;
+
+}
+#intro{
+  margin-top: 0;
+  padding-top: 30px;
+  margin:auto;
+}
+#gallery{
+  margin: auto;
+}
+#gallery img{
+  padding: 20px;
+  max-height: 75px;
+}
+.box{
+  display: inline-block;
+  width:27%;
+  padding: 25px;
+  padding-bottom: 10px;
+}
+.box p{
+  padding:1px;
+}
+
+/* Education */
+#education{
+  display: inline-block;
+  background-color: #DDDDDD;
+  width:100%;
+  padding-top: 10px;
+}
+#edutext{
+  text-align: center;
+}
+
+#education .row{
+  width: 90%;
+  margin: auto;
+}
+
+.left{
+  width: 45%;
+  display: block;
+  margin:auto;
+  float: left;
+}
+.right{
+  width:45%;
+  display: block;
+  margin:auto;
+  float: right;
+}
+
+/* Experiance */
+#work-intro{
+  text-align: center;
+}
+#experiance .row{
+  width: 90%;
+  margin: auto;
+}
+
+/* Footer */
+footer .container{
+  width: 100%;
+  background-color: #DDDDDD;
+}
+footer .row{
+  width:75%;
+  margin:auto;
+}
+
+/* Media */
+@media only screen and (max-width: 600px) {
+    .box {
+        display: block;
+        margin:auto;
+        width: 80%;
+    }
+}
