@@ -20,6 +20,10 @@ body, html{
 section{
   height: auto;
 }
+.row{
+  width: 90%;
+  height: auto;
+}
 
 
 /* Header */
@@ -56,17 +60,25 @@ header a{
   font-weight: 700;
 }
 
+/* About */
+#about{
+  background-color: #DDDDDD;
+  text-align: center;
+  padding-top:50px;
+  padding-bottom:50px;
+}
+
 /* Expertise */
 #expertise{
   text-align: center;
   background-color: #F4F4F4
   height:auto;
   width:100%;
-
+  padding-top:50px;
+  padding-bottom:50px;
 }
 #intro{
   margin-top: 0;
-  padding-top: 30px;
   margin:auto;
 }
 #gallery{
@@ -74,8 +86,9 @@ header a{
 }
 #gallery img{
   padding: 20px;
-  max-height: 75px;
+  max-height: 100px;
 }
+
 .box{
   display: inline-block;
   width:27%;
@@ -91,47 +104,86 @@ header a{
   display: inline-block;
   background-color: #DDDDDD;
   width:100%;
-  padding-top: 10px;
+  padding-top:50px;
+  padding-bottom:50px;
 }
 #edutext{
   text-align: center;
 }
-
+#education img{
+  max-width: 100%;
+  height: auto;
+}
 #education .row{
   width: 90%;
   margin: auto;
+  height: 100%;
 }
 
-.left{
+#education .left{
   width: 45%;
   display: block;
   margin:auto;
   float: left;
 }
-.right{
+#education .right{
+  width:55%;
+  display: inline-block;
+  margin:auto;
+  float: right;
+}
+#education .list{
+  height: 100%;
+  width: 55%;
+  display: block;
+}
+.edushowcase{
+  border-bottom: 1px #CDCDCD solid;
+}
+
+/* Experience */
+#experience{
+  padding-top:50px;
+  padding-bottom:50px;
+}
+#work-intro{
+  text-align: center;
+}
+#experience .row{
+  width: 90%;
+  margin: auto;
+}
+#experience .left{
+  width: 45%;
+  display: block;
+  margin:auto;
+  float: left;
+}
+#experience .right{
   width:45%;
   display: block;
   margin:auto;
   float: right;
 }
 
-/* Experiance */
-#work-intro{
-  text-align: center;
-}
-#experiance .row{
-  width: 90%;
-  margin: auto;
-}
-
 /* Footer */
 footer .container{
   width: 100%;
   background-color: #DDDDDD;
+  padding-top:15px;
+  padding-bottom:15px;
 }
 footer .row{
   width:75%;
   margin:auto;
+}
+footer p{
+  display: inline;
+}
+#email{
+  float:right;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Media */
@@ -140,5 +192,11 @@ footer .row{
         display: block;
         margin:auto;
         width: 80%;
+    }
+    .container{
+      width:90%;
+      margin:auto;
+      height: auto;
+      overflow: auto;
     }
 }
