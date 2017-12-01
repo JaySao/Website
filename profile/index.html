@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Jeremy Sao</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="./script.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
@@ -12,7 +14,8 @@
     <div class="overlay">
       <div class="hcontainer">
         <div id="welcome">
-          <h1>Welcome to my site</h1>
+          <h1 id="statictext">Hi, I'm Jeremy, I'm looking to learn</h1>
+          <h1 id="addon"></h1>
         </div>
         <div id="scroll">
           <a href="#about" class="button">CLICK HERE FOR MORE</a>
@@ -37,7 +40,7 @@
   <section id="expertise">
     <div class="container">
       <div id="intro">
-        <h1>My Expertise</h1>
+        <h1>My Skills</h1>
         <p>I have the core knowledge of these technologies but I am also contstantly learning new ones.</p>
       </div>
       <div id="gallery">
@@ -65,7 +68,7 @@
     <div class="container">
       <div id="edutext">
         <h1>Education</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>I have been studying computer science since i got out of high school and now have a solid theoretical foundation.</p>
       </div>
       <div class="edushowcase container">
         <div class="row">
@@ -129,9 +132,22 @@
             </ul>
           </div>
           <div class="right">
-            <img src="http://via.placeholder.com/250x250">
+            <img src="./resources/eagle.png">
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div id="contacttext">
+        <h1>How can I help?</h1>
+        <p>I am always looking for new opportunites to grow and learn. If I look
+          like a good candidate, please contact me!</p>
+      </div>
+      <div>
+        <a href="" class="button" id="contactbutton">Contact Me</a>
       </div>
     </div>
   </section>

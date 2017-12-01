@@ -1,4 +1,12 @@
 /* Global */
+/* Colors
+#F46036
+#DCDDE5
+#B4C7D8
+#878787
+#413C4B
+
+*/
 body, html{
   margin:0;
   background-color: #F4F4F4;
@@ -18,11 +26,30 @@ body, html{
   height: auto;
 }
 section{
+  padding-top:50px;
+  padding-bottom:50px;
   height: auto;
 }
 .row{
   width: 90%;
   height: auto;
+}
+.button{
+  color: white;
+  text-decoration: none;
+  border: 2px #F67C5A solid;
+  border-radius: 50px;
+  padding: 10px;
+  font-weight: 700;
+}
+.button:hover{
+  color: white;
+  text-decoration: none;
+  border: 2px #F46036 solid;
+  border-radius: 50px;
+  padding: 10px;
+  font-weight: 700;
+  background-color: #F67C5A;
 }
 
 
@@ -32,7 +59,7 @@ header{
   height: 100%;
   background-size: cover;
   text-align: center;
-  border-bottom: 3px orange solid;
+  border-bottom: 3px #F67C5A solid;
 }
 .overlay {
     z-index: 1;
@@ -51,21 +78,24 @@ header h1{
   padding-bottom: 20px;
   font-size: 3.4rem;
 }
-header a{
-  color: white;
-  text-decoration: none;
-  border: 2px orange solid;
-  border-radius: 50px;
-  padding: 10px;
-  font-weight: 700;
+#statictext{
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
+#addon{
+  padding-top:0;
+}
+
 
 /* About */
 #about{
   background-color: #DDDDDD;
   text-align: center;
-  padding-top:50px;
-  padding-bottom:50px;
+
+}
+#aboutme{
+  width:80%;
+  margin:auto;
 }
 
 /* Expertise */
@@ -74,8 +104,7 @@ header a{
   background-color: #F4F4F4
   height:auto;
   width:100%;
-  padding-top:50px;
-  padding-bottom:50px;
+
 }
 #intro{
   margin-top: 0;
@@ -104,8 +133,7 @@ header a{
   display: inline-block;
   background-color: #DDDDDD;
   width:100%;
-  padding-top:50px;
-  padding-bottom:50px;
+
 }
 #edutext{
   text-align: center;
@@ -143,8 +171,7 @@ header a{
 
 /* Experience */
 #experience{
-  padding-top:50px;
-  padding-bottom:50px;
+
 }
 #work-intro{
   text-align: center;
@@ -164,6 +191,24 @@ header a{
   display: block;
   margin:auto;
   float: right;
+  overflow: hidden;
+}
+/* Contact */
+#contact{
+  text-align: center;
+  background-color: #F67C5A;
+}
+#contact .container{
+  height: 250px; /* Cant figure out why this wont auto height */
+}
+#contacttext{
+  padding-bottom:50px;
+}
+#contactbutton{
+  border: 2px black solid;
+}
+#contactbutton:hover{
+  background-color: black;
 }
 
 /* Footer */
@@ -198,5 +243,8 @@ footer p{
       margin:auto;
       height: auto;
       overflow: auto;
+    }
+    header h1{
+      font-size: 1.5rem;
     }
 }
