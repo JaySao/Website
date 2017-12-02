@@ -27,14 +27,26 @@ $(document).ready(function(){
 
 
   var i = 0;
-  var txt = 'web development.';
+  var arrayCount = 0;
+  var txt = ['web development.', 'the LAMP stack.','backend design.'];
   var speed = 100;
 
   function typeWriter() {
-    if (i < txt.length) {
-      document.getElementById("addon").innerHTML += txt.charAt(i);
+    if (i < txt[arrayCount].length) {
+      document.getElementById("addon").innerHTML += txt[arrayCount].charAt(i);
       i++;
       setTimeout(typeWriter, speed);
+    }
+    else{
+      setTimeout(function(){
+        i=0;
+        arrayCount++;
+        document.getElementById("addon").innerHTML = '';
+        setTimeout(typeWriter, speed);
+        if(arrayCount == 3){
+          arrayCount = 0;
+        }
+      }, 1000);
     }
   }
   typeWriter();
