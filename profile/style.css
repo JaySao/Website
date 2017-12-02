@@ -145,7 +145,7 @@ header h1{
 #education .row{
   width: 90%;
   margin: auto;
-  height: 100%;
+  height: auto;
 }
 
 #education .left{
@@ -196,7 +196,7 @@ header h1{
 /* Contact */
 #contact{
   text-align: center;
-  background-color: #F67C5A;
+  background-color: #F46036;
 }
 #contact .container{
   height: 250px; /* Cant figure out why this wont auto height */
@@ -232,19 +232,23 @@ footer p{
 }
 
 /* Media */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .box {
         display: block;
         margin:auto;
         width: 80%;
     }
     .container{
-      width:90%;
+      width:95%;
       margin:auto;
       height: auto;
       overflow: auto;
     }
     header h1{
       font-size: 1.5rem;
+    }
+    #experience .row{
+      width: 100%;
+      display: block;
     }
 }
