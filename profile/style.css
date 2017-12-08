@@ -79,7 +79,7 @@ header h1{
   padding-bottom: 20px;
   font-size: 3.4rem;
 }
-#statictext{
+#staticText{
   padding-top: 20%;
   padding-bottom: 0;
   margin-bottom: 0;
@@ -99,12 +99,16 @@ header h1{
   text-align: center;
 
 }
-#aboutme{
-  width:80%;
+#aboutMe{
+  width:70%;
   margin:auto;
 }
 
 /* Expertise */
+#expertise .container{
+  width:90%;
+  overflow: hidden;
+}
 #expertise{
   text-align: center;
   background-color: #F4F4F4
@@ -212,16 +216,15 @@ header h1{
   text-align: center;
   background-color: #F46036;
 }
-#contact .container{
-  height: 250px; /* Cant figure out why this wont auto height */
-}
-#contacttext{
+
+#contactText{
   padding-bottom:50px;
 }
-#contactbutton{
+#contactButton{
   border: 2px black solid;
+  display: inline-block;
 }
-#contactbutton:hover{
+#contactButton:hover{
   background-color: black;
 }
 
