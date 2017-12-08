@@ -54,6 +54,7 @@ section{
 
 
 
+
 /* Header */
 header{
   background: url("./resources/atl.png");
@@ -74,17 +75,21 @@ header{
 }
 header h1{
   margin-top: 0;
-  padding-top: 20%;
   color: white;
   padding-bottom: 20px;
   font-size: 3.4rem;
 }
 #statictext{
+  padding-top: 20%;
   padding-bottom: 0;
   margin-bottom: 0;
 }
 #addon{
+  display: inline;
   padding-top:0;
+}
+#scroll{
+  padding-top: 10%;
 }
 
 
@@ -163,7 +168,7 @@ header h1{
 }
 #education .list{
   height: 100%;
-  width: 55%;
+  width: 100%;
   display: block;
 }
 .edushowcase{
@@ -171,28 +176,32 @@ header h1{
 }
 
 /* Experience */
-#experience{
-
+#experience .under{
+  display: block;
 }
 #work-intro{
   text-align: center;
 }
 #experience .row{
-  width: 90%;
+  width: 100%;
   margin: auto;
 }
 #experience .left{
-  width: 45%;
+  width: 49%;
   display: block;
   margin:auto;
   float: left;
 }
 #experience .right{
-  width:45%;
+  width:50%;
   display: block;
   margin:auto;
   float: right;
   overflow: hidden;
+  padding-left: 2px;
+}
+#experience img{
+  width: 100%;
 }
 /* Contact */
 #contact{
@@ -234,6 +243,17 @@ footer p{
 
 /* Media */
 @media only screen and (max-width: 700px) {
+  /* Global */
+  .under{
+    display: inline-block;
+  }
+  /* Header */
+  header h1{
+    font-size: 1.5rem;
+  }
+  /* About */
+
+  /* Expertise */
     .box {
         display: block;
         margin:auto;
@@ -245,11 +265,15 @@ footer p{
       height: auto;
       overflow: auto;
     }
-    header h1{
-      font-size: 1.5rem;
-    }
+  /* Experience */
     #experience .row{
       width: 100%;
       display: block;
+    }
+    #experience img{
+      width: 100%;
+    }
+    #experience .under{
+      display: inline-block;
     }
 }

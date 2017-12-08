@@ -4,6 +4,7 @@ add revolving text for head -->
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jeremy Sao</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="./script.js"></script>
@@ -17,6 +18,7 @@ add revolving text for head -->
       <div class="hcontainer">
         <div id="welcome">
           <h1 id="statictext">Hi, I'm Jeremy, I'm looking to learn</h1>
+          <span> &zwnj;</span>
           <h1 id="addon"></h1>
         </div>
         <div id="scroll">
@@ -76,11 +78,13 @@ add revolving text for head -->
         <div class="row">
           <div class="left">
             <h3>Georgia State University</h3>
-            <h4>Computer Science B.S.</h4>
-            <p>I am currently a senior at GSU majoring in Computer Science. I am expected to graduate in Spring 2018.</p>
           </div>
           <div class="right">
             <img src="./resources/gsu-logo.gif">
+          </div>
+          <div class="under">
+            <h4>Computer Science B.S.</h4>
+            <p>I am currently a senior at GSU majoring in Computer Science. I am expected to graduate in Spring 2018.</p>
           </div>
           <div class="list">
             <h4>Relevant Coursework</h4>
@@ -97,6 +101,11 @@ add revolving text for head -->
         <div class="row">
           <div class="left">
             <h3>Self Study</h3>
+          </div>
+          <div class="right">
+            <img src="./resources/placeit.png">
+          </div>
+          <div class="under">
             <h4>Skills learned on my own</h4>
             <p>While much of my fundamental computer science knowledge is attributed to school, many more applicable skills I have learned on my own through
               resources such as Codecademy, FreeCodeCamp, and Lynda.com.</p>
@@ -109,9 +118,6 @@ add revolving text for head -->
                 <li>jQuery</li>
               </ul>
             </div>
-          </div>
-          <div class="right">
-            <img src="./resources/placeit.png">
           </div>
         </div>
 
@@ -131,17 +137,20 @@ add revolving text for head -->
         <div class="row">
           <div class="left">
             <h3>Eagle Parking Solutions</h3>
-            <p>I started here as a valet and moved to be a manager. I gained many skills
-            such as effective communication, multitasking, and working under pressure.</p>
-            <ul>
-              <li>Managed team of valets</li>
-              <li>Communicated with higher level managers</li>
-              <li>Constantly provided top tier customer service</li>
-            </ul>
           </div>
           <div class="right">
             <img src="./resources/eagle.png">
           </div>
+        </div>
+        <div class="under">
+          <h4>Valet Manager</h4>
+          <p>I started here as a valet and moved to be a manager. I gained many skills
+          such as effective communication, multitasking, and working under pressure.</p>
+          <ul>
+            <li>Managed team of valets</li>
+            <li>Communicated with higher level managers</li>
+            <li>Constantly provided top tier customer service</li>
+          </ul>
         </div>
       </div>
     </div>
