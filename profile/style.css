@@ -37,7 +37,7 @@ section{
 .button{
   color: white;
   text-decoration: none;
-  border: 2px #F67C5A solid;
+  border: 2px #F46036 solid;
   border-radius: 50px;
   padding: 10px;
   font-weight: 700;
@@ -49,7 +49,7 @@ section{
   border-radius: 50px;
   padding: 10px;
   font-weight: 700;
-  background-color: #F67C5A;
+  background-color: #F46036;
 }
 
 
@@ -61,7 +61,7 @@ header{
   height: 100%;
   background-size: cover;
   text-align: center;
-  border-bottom: 3px #F67C5A solid;
+  border-bottom: 3px #F46036 solid;
 }
 .overlay {
     z-index: 1;
@@ -230,8 +230,9 @@ header h1{
 
 /* Footer */
 footer .container{
+  color: #DDDDDD;
   width: 100%;
-  background-color: #DDDDDD;
+  background-color: #2D2D2C;
   padding-top:15px;
   padding-bottom:15px;
 }
@@ -241,8 +242,16 @@ footer .row{
 }
 footer p{
   display: inline;
+  text-decoration: none;
+  color:inherit;
 }
-#email{
+footer, a{
+  display: inline;
+  text-decoration: none;
+  color:inherit;
+}
+.flright{
+  display: inline-block;
   float:right;
   text-decoration: none;
   color: inherit;
