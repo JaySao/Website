@@ -28,9 +28,10 @@ $(document).ready(function(){
   var txt = ['web development.', 'the LAMP stack.','backend design.'];
   var speed = 100;
 
+  //Append txt array to addon h1
   function typeWriter() {
     if (i < txt[arrayCount].length) {
-      document.getElementById("addon").innerHTML += txt[arrayCount].charAt(i);
+      $("#addon").append(txt[arrayCount].charAt(i));
       i++;
       setTimeout(typeWriter, speed);
     }
@@ -38,7 +39,7 @@ $(document).ready(function(){
       setTimeout(function(){
         i=0;
         arrayCount++;
-        document.getElementById("addon").innerHTML = '';
+        $("#addon").text('');
         setTimeout(typeWriter, speed);
         if(arrayCount == 3){
           arrayCount = 0;
