@@ -25,7 +25,7 @@ $(document).ready(function(){
 
   var i = 0;
   var arrayCount = 0;
-  var txt = ['web development.', 'the LAMP stack.','backend design.'];
+  var txt = ['web applications.', 'software.','web pages.'];
   var speed = 100;
 
   //Append txt array to addon h1
